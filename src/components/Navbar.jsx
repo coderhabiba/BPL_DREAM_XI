@@ -1,6 +1,5 @@
-import React from 'react';
 
-function Navbar() {
+function Navbar({ availableBalance }) {
   return (
     <div>
       {/* navbar */}
@@ -8,7 +7,7 @@ function Navbar() {
         <div className="navbar container mx-auto">
           <div className="navbar-start">
             <a className="">
-              <img src="../assets/logo.png" alt="logo" />
+              <img src="https://i.ibb.co.com/HDLm4y0L/logo.png" alt="logo" />
             </a>
           </div>
 
@@ -37,7 +36,7 @@ function Navbar() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content flex flex-col gap-3 bg-[#F14749] rounded-box z-1 mt-3 w-52 p-4 shadow absolute right-2"
+                className="menu menu-sm dropdown-content flex flex-col gap-3 bg-[#F14749] rounded-box z-1 mt-3 w-80 p-4 shadow absolute right-2"
               >
                 <li>
                   <a className="text-[16px] text-[#131313b3]">Home</a>
@@ -53,12 +52,12 @@ function Navbar() {
                 </li>
                 <li>
                   <a className="btn rounded-xl text-[16px] font-semibold text-[#131313] px-5 py-4">
-                    <span id="coin-count">0</span>
+                    <span id="coin-count">{availableBalance}</span>
                     <span>Coin</span>
                     <div className="w-5 h-5">
                       <img
                         className="w-full h-full"
-                        src="../assets/coin.png"
+                        src="https://i.ibb.co.com/HDdmrpkw/coin.png"
                         alt="coin"
                       />
                     </div>
@@ -82,12 +81,12 @@ function Navbar() {
               </li>
               <li>
                 <a className="btn rounded-xl text-[16px] font-semibold text-[#131313] px-5 py-4">
-                  <span>0</span>
+                  <span>{availableBalance}</span>
                   <span>Coin</span>
                   <div className="w-5 h-5">
                     <img
                       className="w-full h-full"
-                      src="../assets/coin.png"
+                      src="https://i.ibb.co.com/HDdmrpkw/coin.png"
                       alt="coin"
                     />
                   </div>

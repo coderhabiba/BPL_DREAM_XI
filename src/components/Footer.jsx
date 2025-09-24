@@ -1,10 +1,11 @@
 
+
 const Footer = () => {
   return (
-    <div className="pt-[240px] bg-[#06091a] relative">
+    <div className="pt-[240px] bg-[#06091a] mt-72 relative">
       <div className="container mx-auto">
         <div className="flex flex-col items-center justify-between mb-16">
-          <img src="../../assets/logo-footer.png" alt="logo" />
+          <img src="https://i.ibb.co.com/GvnTqWhb/logo-footer.png" alt="logo" />
         </div>
         <div className="flex lg:flex-row flex-col lg:gap-0 gap-10 justify-between">
           <div className="about">
