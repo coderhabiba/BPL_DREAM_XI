@@ -18,7 +18,7 @@ function PlayerCard({ player, availableBalance, setAvailableBalance,setSelectCou
         </div>
 
         <div>
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-1 mt-10">
             <div className="ml-[-7px] w-7 h-7">
               <img
                 className="w-full h-full"
